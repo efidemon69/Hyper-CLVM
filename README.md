@@ -19,7 +19,7 @@ Hyper CLVM is a base for a Custom Lua Virtual Machine. This project is not compl
     BytecodeEncoder encoder;
     std::vector<unsigned char> bytecode;
 
-     bytecode = encoder.encode( lua_code );
+    bytecode = encoder.encode( lua_code );
     std::string bytecode_str( bytecode.begin( ), bytecode.end( ) );
     vm.load_bytecode( bytecode_str );
     vm.execute( );
