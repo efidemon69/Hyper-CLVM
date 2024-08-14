@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="workspace">
+      <UniqueIdentifier>{d6961d14-bdd3-41c2-b038-72e0cf67473e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\engine">
+      <UniqueIdentifier>{77911a88-40a7-4d31-adab-64ae14892ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\engine\bytecode">
+      <UniqueIdentifier>{5d74781d-fb59-4fb9-870e-a6902798e597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\engine\CLVM">
+      <UniqueIdentifier>{26d80757-ef81-4ff5-94a5-b49e3e41faae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\engine\c_hooks">
+      <UniqueIdentifier>{f9821a0d-e2c7-451e-8db0-8efea78f8cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\engine\instructions dispatcher">
+      <UniqueIdentifier>{a7c8c634-5aaf-4395-923c-b3c472c329f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\engine\memorym">
+      <UniqueIdentifier>{20b084ac-602b-4607-8a91-a1a32216bfe9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\engine\security">
+      <UniqueIdentifier>{436ed1e6-eb23-4c59-95b1-593ace3e902d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\engine\stack">
+      <UniqueIdentifier>{853bbb15-c122-4ef9-816a-5447b9f3c09e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="workspace\lua">
+      <UniqueIdentifier>{07a9ccf5-5832-48a7-8d17-55aa381f5d42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="entry.cpp" />
+    <ClCompile Include="workspace\engine\bytecode\bytecode_encoder.cpp" />
+    <ClCompile Include="workspace\engine\bytecode\bytecode_loader.cpp" />
+    <ClCompile Include="workspace\engine\clvm\clvm.cpp" />
+    <ClCompile Include="workspace\engine\hooks\custom_hooks.cpp" />
+    <ClCompile Include="workspace\workspace\Luau\lapi.c" />
+    <ClCompile Include="workspace\workspace\Luau\lauxlib.c" />
+    <ClCompile Include="workspace\workspace\Luau\lbaselib.c" />
+    <ClCompile Include="workspace\workspace\Luau\lcode.c" />
+    <ClCompile Include="workspace\workspace\Luau\ldblib.c" />
+    <ClCompile Include="workspace\workspace\Luau\ldebug.c" />
+    <ClCompile Include="workspace\workspace\Luau\ldo.c" />
+    <ClCompile Include="workspace\workspace\Luau\ldump.c" />
+    <ClCompile Include="workspace\workspace\Luau\lfunc.c" />
+    <ClCompile Include="workspace\workspace\Luau\lgc.c" />
+    <ClCompile Include="workspace\workspace\Luau\linit.c" />
+    <ClCompile Include="workspace\workspace\Luau\liolib.c" />
+    <ClCompile Include="workspace\workspace\Luau\llex.c" />
+    <ClCompile Include="workspace\workspace\Luau\lmathlib.c" />
+    <ClCompile Include="workspace\workspace\Luau\lmem.c" />
+    <ClCompile Include="workspace\workspace\Luau\loadlib.c" />
+    <ClCompile Include="workspace\workspace\Luau\lobject.c" />
+    <ClCompile Include="workspace\workspace\Luau\lopcodes.c" />
+    <ClCompile Include="workspace\workspace\Luau\loslib.c" />
+    <ClCompile Include="workspace\workspace\Luau\lparser.c" />
+    <ClCompile Include="workspace\workspace\Luau\lstate.c" />
+    <ClCompile Include="workspace\workspace\Luau\lstring.c" />
+    <ClCompile Include="workspace\workspace\Luau\lstrlib.c" />
+    <ClCompile Include="workspace\workspace\Luau\ltable.c" />
+    <ClCompile Include="workspace\workspace\Luau\ltablib.c" />
+    <ClCompile Include="workspace\workspace\Luau\ltm.c" />
+    <ClCompile Include="workspace\workspace\Luau\lua.c" />
+    <ClCompile Include="workspace\workspace\Luau\lundump.c" />
+    <ClCompile Include="workspace\workspace\Luau\lvm.c" />
+    <ClCompile Include="workspace\workspace\Luau\lzio.c" />
+    <ClCompile Include="workspace\workspace\Luau\print.c" />
+    <ClCompile Include="workspace\engine\memory\memory_manager.cpp" />
+    <ClCompile Include="workspace\engine\security\security.cpp" />
+    <ClCompile Include="workspace\engine\stack\stack_manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="workspace\engine\instructions\instruction_dispatcher.cpp" />
+    <ClInclude Include="workspace\engine\bytecode\bytecode_encoder.h" />
+    <ClInclude Include="workspace\engine\bytecode\bytecode_loader.h" />
+    <ClInclude Include="workspace\engine\clvm\clvm.h" />
+    <ClInclude Include="workspace\engine\clvm_errors.h" />
+    <ClInclude Include="workspace\engine\hooks\custom_hooks.h" />
+    <ClInclude Include="workspace\includes.h" />
+    <ClInclude Include="workspace\engine\instructions\instruction_dispatcher.h" />
+    <ClInclude Include="workspace\Luau\lapi.h" />
+    <ClInclude Include="workspace\Luau\lauxlib.h" />
+    <ClInclude Include="workspace\Luau\lauxlibmodsh.h" />
+    <ClInclude Include="workspace\Luau\lcode.h" />
+    <ClInclude Include="workspace\Luau\ldebug.h" />
+    <ClInclude Include="workspace\Luau\ldo.h" />
+    <ClInclude Include="workspace\Luau\lfunc.h" />
+    <ClInclude Include="workspace\Luau\lgc.h" />
+    <ClInclude Include="workspace\Luau\llex.h" />
+    <ClInclude Include="workspace\Luau\llimits.h" />
+    <ClInclude Include="workspace\Luau\lmem.h" />
+    <ClInclude Include="workspace\Luau\lobject.h" />
+    <ClInclude Include="workspace\Luau\lopcodes.h" />
+    <ClInclude Include="workspace\Luau\lparser.h" />
+    <ClInclude Include="workspace\Luau\lstate.h" />
+    <ClInclude Include="workspace\Luau\lstring.h" />
+    <ClInclude Include="workspace\Luau\ltable.h" />
+    <ClInclude Include="workspace\Luau\ltm.h" />
+    <ClInclude Include="workspace\Luau\lua.h" />
+    <ClInclude Include="workspace\Luau\luaconf.h" />
+    <ClInclude Include="workspace\Luau\lualib.h" />
+    <ClInclude Include="workspace\Luau\lundump.h" />
+    <ClInclude Include="workspace\Luau\lvm.h" />
+    <ClInclude Include="workspace\Luau\lzio.h" />
+    <ClInclude Include="workspace\engine\memory\memory_manager.h" />
+    <ClInclude Include="workspace\engine\opcode_definitions.h" />
+    <ClInclude Include="workspace\engine\security\security.h" />
+    <ClInclude Include="workspace\engine\stack\stack_manager.h" />
+    <ClInclude Include="workspace\engine\types.h" />
+  </ItemGroup>
+</Project>
