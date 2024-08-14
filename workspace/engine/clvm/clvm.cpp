@@ -24,7 +24,6 @@ auto CLVM::load_bytecode( const std::string& lua_code ) -> void
 
         bytecode = new unsigned char[ bytecode_size ];
         std::memcpy( bytecode, bytecode_vector.data( ), bytecode_size );
-
         dispatcher = std::make_unique<InstructionDispatcher>( bytecode );
     }
     catch ( const std::exception& e ) 
