@@ -25,12 +25,12 @@ auto start::main( ) -> int
     return 0;
 }
 
-auto DllMain( HMODULE hmod, DWORD reason, LPVOID res ) -> bool APIENTRY
+auto DllMain( [[maybe_unused]]HMODULE hmod, DWORD reason, [[maybe_unused]]LPVOID res ) -> bool APIENTRY
 {
     UNREFERENCED_PARAMETER( hmod );
     UNREFERENCED_PARAMETER( res );
 
-    if ( reason == 0x1 )
+    if ( reason == 1 )
     {
         start::main( );
     }
